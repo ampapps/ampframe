@@ -1,0 +1,12 @@
+1.1.1
+
+-fixed page model underfined values in arg
+
+1.1
+
+-Moved constant declarations to be available sooner
+-Updated built in BS4 navbar menu system
+-Added BS4 nav menu system
+-Updated built in BS4 paging
+
+1.0 First stable release

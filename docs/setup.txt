@@ -1,0 +1,27 @@
+AMP Frame ver 1
+
+Quick Setup
+
+1) Include all the files and folders in a web accessible folder (http, www, etc...) or sub folder on your server
+
+2) Edit the config/config.php file to include your domain URL (http://yoursite.com/) and installation folder (path/if/any). The installation folder will be commented out with a hash tag, if you need to set this be sure to remove the comment and then make the change. This applies to any other settings you may want to change.
+
+3) If you are not connecting to a database, skip to part 7.
+
+4) If you have not already created a mySQL database and user, do it now.
+
+5) Make sure the database connection settings are correct in the config/config.php file.
+
+6) If you want to automatically connect to the database, modify the route/page.php file...
+
+    a) Find the array for the model file named afm.mysqlip.e.php
+
+    b) Change the connect value in the arg array from false to true.
+
+Repeat this step in any of the other route files you want to connect to the database.
+
+7) If you installed your script in a sub folder, change the FallbackResource in the .htaccess file to include the folder (/path/if/any/index.php).
+
+8) Point your browser to the domain root or sub folder containing the script.
+
+If the sample home page looks correct, then the script is set up correctly.
